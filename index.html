@@ -177,7 +177,7 @@
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Reserve a Table </h4>
+                    <h4 class="modal-title">Reserve a Table</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -290,10 +290,14 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function(){
+        console.log('in script');
+        $(document).ready(function()
+        {
             $("#mycarousel").carousel({ interval:2000 });
-            $("#carouselButton").click(function(){
-                if($('carouselButton').children("span").hasClass('fa-pause')){
+            $('#carouselButton').click(function()
+            {
+                console.log('clicked');
+                if($("#carouselButton").children("span").hasClass('fa-pause')){
                     $("#mycarousel").carousel('pause');
                     $("#carouselButton").children("span").removeClass('fa-pause');
                     $("#carouselButton").children("span").addClass('fa-play');
