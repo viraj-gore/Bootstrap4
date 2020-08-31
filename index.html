@@ -296,7 +296,6 @@
             $("#mycarousel").carousel({ interval:2000 });
             $('#carouselButton').click(function()
             {
-                console.log('clicked');
                 if($("#carouselButton").children("span").hasClass('fa-pause')){
                     $("#mycarousel").carousel('pause');
                     $("#carouselButton").children("span").removeClass('fa-pause');
