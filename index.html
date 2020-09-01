@@ -27,9 +27,7 @@
                     <li class = "nav-item"><a class = "nav-link" href = "contactus.html"><span class = "fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                        <span class="fa fa-sign-in"> Login</span>
-                    </a>
+                    <a><span class="fa fa-sign-in"> Login</span></a>
                 </span>
             </div>
         </div>  
@@ -80,7 +78,9 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a class="btn btn-warning btn-block" data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
+                    <button class="btn btn-warning btn-block" id="reserveTableButton">Reserve Table</button>
+                    <span class="reserveModal">
+                    </span>
                 </div>
             </div>
         </div>
@@ -310,4 +310,4 @@
         });
     </script>
 </body> 
-</html>
+</html> 
